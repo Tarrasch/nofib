@@ -93,7 +93,7 @@ runtests :: $(NOFIB_PROG_WAY) size
 else
 
 size :: $(NOFIB_PROG_WAY)
-	@$(STRIP) $(NOFIB_PROG_WAY)$(exeext)
+	@echo Stripping disabled by ARASH
 	@echo ==nofib$(_way)== $(NOFIB_PROG): size of $(NOFIB_PROG) follows...
 	@$(SIZE) $(NOFIB_PROG_WAY)$(exeext)
 
