@@ -1,5 +1,7 @@
 # Just some commands here so I don't have to rely on my zsh shell history
 #
+# Usage (from zsh): `ik nofib && source arash.zsh`
+#
 
 () {
   ik 'nofib' || return 1
@@ -12,9 +14,9 @@
 
   local EXTRA_HC_OPTS
   local EXTRA_RUNTEST_OPTS
-  # EXTRA_HC_OPTS=( -g )
+  EXTRA_HC_OPTS=( -g )
   # EXTRA_RUNTEST_OPTS=( +RTS --stack-trace -RTS )
-  EXTRA_HC_OPTS=()
+  # EXTRA_HC_OPTS=()
   EXTRA_RUNTEST_OPTS=()
   local LOG_FILE_NAME="log-fast-1${EXTRA_HC_OPTS}${EXTRA_RUNTEST_OPTS[2]}-$DATE"
   # ${EXTRA_RUNTEST_OPTS[2]} hack evaluates to --stack-trace
